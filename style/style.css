@@ -104,7 +104,7 @@
     font-weight: 550;
   }
 
-  /* .checked {
+ #check[type="checkbox"]:checked+label {
     text-decoration: line-through;
     color: black;
-  } */
+  } 

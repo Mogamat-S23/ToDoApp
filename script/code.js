@@ -1,8 +1,4 @@
 
-
-
-
-// select everything
 // select the todo-form
 const todoForm = document.querySelector('.todo-form');
 // select the input box
@@ -59,8 +55,8 @@ function renderTodos(todos) {
       li.classList.add('checked');
     }
 li.innerHTML = `
-      <input type="checkbox" class="checkbox" ${checked}>
-      ${item.name}
+      <input type="checkbox" class="checkbox" ${checked} id="check">
+      <label>${item.name}</label>
       <button class="delete-button">X</button>
     `;
     // finally add the <li> to the <ul>
@@ -121,3 +117,6 @@ todoItemsList.addEventListener('click', function(event) {
   }
 });
   
+
+
+
