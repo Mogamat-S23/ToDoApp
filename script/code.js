@@ -114,7 +114,7 @@ todoItemsList.addEventListener('click', function(event) {
     // toggle the state
     toggle(event.target.parentElement.getAttribute('data-key'));
   }
-// check if that is a delete-button
+// check if that  a delete-button
   if (event.target.classList.contains('delete-button')) {
     // get id from data-key attribute's value of parent <li> where the delete-button is present
     deleteTodo(event.target.parentElement.getAttribute('data-key'));
