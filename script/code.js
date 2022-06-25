@@ -29,6 +29,7 @@ function addTodo(item) {
 // finally clear the input box value
     todoInput.value = '';
   }
+  console.table(todos);
 }
 // function to render given todos to screen
 function renderTodos(todos) {
@@ -118,5 +119,17 @@ todoItemsList.addEventListener('click', function(event) {
 });
   
 
+document.querySelector(".Sort-button").addEventListener("click", () => {
+    todos.sort((a, b) => {  
+      if (a.id < b.id) {
+        return -1;
+      }
+      if (a.id > b.id) {
+        return 1;
+      }
+      return 0;
+    });
+   
+  });
 
 
