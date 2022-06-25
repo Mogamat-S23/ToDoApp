@@ -111,7 +111,7 @@
 
 
 
-  @media (min-width: 750px) {
+  /* @media (min-width: 750px) {
     #items-container {
         width: 60%;
     }
@@ -128,5 +128,26 @@
 
     #input-container {
         width:40%
+    }
+} */
+@media screen and (min-width:319px) and (max-width:321px) {
+  .container{
+    width:313px;
+    margin-left: 4px;
+  }  
+  .item{
+      margin-right: 29px;
+    }
+}
+@media screen and (min-width:374px) and (max-width:376px) {
+  .container{
+    width:350px;
+    margin-right: 19px;
+  }  
+  .todo-input {
+    width: 300px;
+  }
+  .item{
+      margin-right: 29px;
     }
 }
